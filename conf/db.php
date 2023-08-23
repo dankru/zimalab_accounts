@@ -12,7 +12,7 @@ class DB{
         $host = self::HOST;
         $db   = self::DB;
 
-        $conn = new PDO("mysql:dbname=$db;host=$host,$user,$pass");
+        $conn = new PDO("mysql:host=$host;dbname=$db",$user,$pass);
         return $conn;
     }
 

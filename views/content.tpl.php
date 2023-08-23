@@ -9,7 +9,14 @@
 </head>
 <body>
 <?php include (ROOT.'/views/components/header.php')?>
-    <h1>Создайтё аккаунт уже сегодня!</h1>
-   
+
+<h1>Список аккаунтов:</h1>
+<h2>Всего аккаунтов: <?php echo($pageData['count'])?></h2>
+<div>
+    <?php foreach ($pageData['accountList'] as $account) {
+            echo($account['first_name']."<br>");
+    }?>
+</div>
+
 </body>
 </html>

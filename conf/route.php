@@ -16,13 +16,12 @@ class Routing {
 
         // change controller and model if route is not default
         if ($route[2] != '') {
-            $contollerName = ucfirst($route[2]. "Controller");
+            $controllerName = ucfirst($route[2]. "Controller");
             $modelName = ucfirst($route[2]. "Model");
         }
         // else default
         require_once CONTROLLER_PATH . $controllerName . ".php"; //IndexController.php
         require_once MODEL_PATH . $modelName . ".php"; //IndexModel.php
-
         // spot action if set
         if (isset($route[2]) && $route[2] !='') {
             $action = $route[2];

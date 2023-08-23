@@ -1,8 +1,11 @@
 <?php
+
+session_start();
+
 define("ROOT", $_SERVER['DOCUMENT_ROOT'].'/zimalab');
 define("CONTROLLER_PATH", ROOT. "/controllers/");
 define("MODEL_PATH", ROOT. "/models/");
-    define("VIEW_PATH", ROOT. "/views/");
+define("VIEW_PATH", ROOT. "/views/");
 
 require_once("db.php");
 require_once("route.php");
