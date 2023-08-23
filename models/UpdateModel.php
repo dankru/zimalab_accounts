@@ -17,5 +17,9 @@ class UpdateModel extends model
         $sql = "UPDATE $table SET $str WHERE id = $id";
         $query = $this->db->prepare($sql);
         $query->execute();
+        if ($query->rowCount()){
+            return true;
+        }
+        return false;
     }
 }

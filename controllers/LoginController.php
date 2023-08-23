@@ -34,8 +34,5 @@ class LoginController extends Controller
             }
         }
     }
-    public function logoutUser(){
-        session_unset();
-        header('Location: '. ROOT);
-    }
+
 }

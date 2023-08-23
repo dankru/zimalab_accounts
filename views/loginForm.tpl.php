@@ -26,6 +26,12 @@
             <input name="phone_number3" style="display: none" placeholder="Номер телефона">
             <button name="button-update">отредактировать</button>
         </form>
+        <a href="/zimalab/logout">
+            <button>Выйти</button>
+        </a>
+        <a href="/zimalab/delete">
+            <button>удалить аккаунт</button>
+        </a>
     <?php else:?>
         Пожалуйста, войдите в аккаунт
         <h1>Войти</h1>

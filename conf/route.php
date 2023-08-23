@@ -12,8 +12,8 @@ class Routing {
         $modelName      = "IndexModel";
         $action         = "Index";
 
-        $route = explode("/", $_SERVER['REQUEST_URI']);
-
+//        $route = explode("/", $_SERVER['REQUEST_URI']);
+        $route = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
         // change controller and model if route is not default
         if ($route[2] != '') {
             $controllerName = ucfirst($route[2]. "Controller");
