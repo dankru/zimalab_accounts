@@ -9,6 +9,7 @@ class DeleteController extends Controller
         $this->view = new View();
     }
     public function delete() {
+        session_start();
         $id = $_SESSION['user']['id'];
         if ($this->model->delete('account', $id)) {
             session_unset();

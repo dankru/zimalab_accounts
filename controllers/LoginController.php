@@ -10,6 +10,7 @@ class LoginController extends Controller
         $this->view = new View();
     }
     public function login() {
+        session_start();
         $this->pageData['title'] = 'Аккаунт';
         $this->pageData['isLogged'] = false;
         if (!isset($_SESSION['user'])){
