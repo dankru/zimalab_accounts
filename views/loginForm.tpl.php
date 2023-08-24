@@ -23,30 +23,33 @@
             <div class="card__subtitle">
                 Здравствуйте, <?php echo($pageData['accountInfo']['first_name'])?>
             </div>
-            <form method="post" action="update" style="display: flex; flex-direction: column; width: 400px">
+            <form method="post" action="update" class="form">
                 <input name="first_name" required placeholder="Имя">
                 <input name="last_name" required placeholder="Фамилия">
                 <input name="email" required placeholder="Почта">
                 <input name="password" type="password" required placeholder="Пароль">
                 <input name="company_name" placeholder="Компания">
                 <input name="position" placeholder="Занимаемая должность">
-                <input name="phone_number1" placeholder="Номер телефона">
-                <input name="phone_number2" style="display: none" placeholder="Номер телефона">
-                <input name="phone_number3" style="display: none" placeholder="Номер телефона">
+                <input name="phone_number1"  placeholder="Номер телефона 1">
+                <input name="phone_number2"  placeholder="Номер телефона 2">
+                <input name="phone_number3"  placeholder="Номер телефона 3">
                 <button name="button-update">отредактировать</button>
             </form>
-            <a href="/zimalab/logout">
-                <button>Выйти</button>
-            </a>
-            <a href="/zimalab/delete">
-                <button>удалить аккаунт</button>
-            </a>
+            <div class="card__buttons" style="margin-bottom: 20px; justify-content: space-between">
+                <a href="/zimalab/logout">
+                    <button>Выйти</button>
+                </a>
+                <a href="/zimalab/delete">
+                    <button>удалить аккаунт</button>
+                </a>
+            </div>
+
             <?php else:?>
                 <div class="card__subtitle">
                     Пожалуйста, войдите в аккаунт
                 </div>
 
-                <form method="post" action="login">
+                <form method="post" action="login" class="form">
                     <input name="email" required>
                     <input type="password" name="password" required>
                     <button name="button-log">Войти</button>

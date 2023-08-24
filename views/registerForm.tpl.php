@@ -21,16 +21,16 @@
         <div class="main-block">
             <div class="main-block__container column _container">
             <h1>Создать аккаунт</h1>
-            <form method="post" action="register" style="display: flex; flex-direction: column; width: 400px">
+            <form method="post" action="register" class="form">
                 <input name="first_name" required placeholder="Имя">
                 <input name="last_name" required placeholder="Фамилия">
                 <input name="email" required placeholder="Почта">
                 <input name="password" type="password" required placeholder="Пароль">
                 <input name="company_name" placeholder="Компания">
                 <input name="position" placeholder="Занимаемая должность">
-                <input name="phone_number1" placeholder="Номер телефона">
-                <input name="phone_number2" style="display: none" placeholder="Номер телефона">
-                <input name="phone_number3" style="display: none" placeholder="Номер телефона">
+                <input name="phone_number1"  placeholder="Номер телефона 1">
+                <input name="phone_number2"  placeholder="Номер телефона 2">
+                <input name="phone_number3"  placeholder="Номер телефона 3">
                 <button name="button-reg">Зарегистрироваться</button>
             </form>
             </div>

@@ -25,7 +25,7 @@ class RegisterController extends Controller
                 echo('Учётная запись создана');
                 exit();
             } else {
-                echo('Пользователь уже существует');
+                echo('Пользователь с таким номером телефона или почтой уже существует');
                 exit();
             }
         }
