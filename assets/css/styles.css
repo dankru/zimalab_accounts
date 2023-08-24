@@ -166,7 +166,7 @@ a{
 }
 .card__subtitle{
     font-family: 'DM Sans', sans-serif;
-    margin: 15px 0 0 8px;
+    margin: 15px 0 0 0;
     opacity: 0.7;
 }
 .card__buttons {

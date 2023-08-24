@@ -11,13 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <!--Styles-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title><?php echo($pageData['title'])?></title>
 
 </head>
 <body>
+<div class="wrapper">
+
     <?php include (ROOT.'/views/components/header.php')?>
     <?php include (ROOT.'/views/components/greeting.php')?>
     <?php include (ROOT.'/views/components/footer.php')?>
+</div>
 </body>
 </html>

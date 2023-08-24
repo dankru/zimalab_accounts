@@ -6,7 +6,7 @@
                 <div class="card__subtitle">Создайте свой аккаунт прямо сейчас!</div>
             </div>
             <div class="card__buttons">
-                <a href="/zimalab/content/?page=0">
+                <a href="/zimalab/account/?page=0">
                     <div class="card__button button">Список</div>
                 </a>
                 <a href="/zimalab/register">
