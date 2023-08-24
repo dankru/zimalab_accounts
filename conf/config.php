@@ -1,8 +1,8 @@
 <?php
 
-session_start();
-
 define("ROOT", $_SERVER['DOCUMENT_ROOT'].'/zimalab');
+define("ASSETS", $_SERVER['DOCUMENT_ROOT'].'/zimalab/assets');
+define("DOMAIN", "http://localhost/zimalab");
 define("CONTROLLER_PATH", ROOT. "/controllers/");
 define("MODEL_PATH", ROOT. "/models/");
 define("VIEW_PATH", ROOT. "/views/");

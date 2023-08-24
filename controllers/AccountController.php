@@ -1,14 +1,14 @@
 <?php
 
-class ContentController extends Controller
+class AccountController extends Controller
 {
-    private $pageTpl = '/views/content.tpl.php';
+    private $pageTpl = '/views/account.tpl.php';
     public function __construct()
     {
-        $this->model = new ContentModel();
+        $this->model = new AccountModel();
         $this->view = new View();
     }
-    public function content() {
+    public function account() {
         $this->pageData['title'] = "Аккаунты";
         $this->pageData['count'] = $this->model->countAccounts();
         $this->pageData['accountList'] = $this->model->selectAllAccounts();

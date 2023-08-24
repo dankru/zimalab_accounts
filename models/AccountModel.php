@@ -1,6 +1,6 @@
 <?php
 
-class ContentModel extends Model
+class AccountModel extends Model
 {
     public function selectAllAccounts() {
         return $this->select('account', []);

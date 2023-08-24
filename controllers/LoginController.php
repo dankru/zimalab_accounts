@@ -12,7 +12,7 @@ class LoginController extends Controller
     public function login() {
         $this->pageData['title'] = 'Аккаунт';
         $this->pageData['isLogged'] = false;
-        if (!$_SESSION['user']){
+        if (!isset($_SESSION['user'])){
             $this->loginUser();
         } else {
             $this->pageData['accountInfo'] = $_SESSION['user'];
@@ -34,5 +34,4 @@ class LoginController extends Controller
             }
         }
     }
-
 }

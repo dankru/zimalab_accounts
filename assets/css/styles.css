@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/*NULLSTYLES*/
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/* Defaults */
+html,body{
+    height: 100%;
+}
+body {
+    line-height: 1;
+    font-family: "Playfair Display", serif;
+    color: #001736;
+    font-weight: 500;
+    font-size: 26px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Helpers */
+.disabled{
+    display: none;
+}
+/* CONTAINER_________________*/
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* HEADER___________________*/
+
+.header__container{
+    display: flex;
+    min-height: 150px;
+    align-items: center;
+}
+
+.header__icons {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+}
+
+.menu__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__item{
+    margin: 0 20px;
+}
+.menu__item:hover{
+    color: #46996C;
+}
+/* MAIN-BLOCK____________*/
+
+.main-block{
+    display: flex;
+    flex-grow: 1;
+    background-color: #F5EBEA;
+}
+.main-block__container{
+    display: flex;
+}
+.column{
+    flex-direction:column;
+}
+.main-block__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-block__info{
+    display: flex;
+    justify-content: start;
+}
+.card__greetings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card__title{
+    font-size: 70px;
+}
+.card__subtitle{
+    font-family: 'DM Sans', sans-serif;
+    margin: 15px 0 0 8px;
+    opacity: 0.7;
+}
+.card__buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+.card__button{
+    margin: 0 20px 0 0;
+    padding: 10px 20px;
+}
+.button{
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    background-color: #46996C;
+    border: 1px solid #46996C;
+    transition: 0.1s;
+}
+.button:hover{
+    transition: 0.1s;
+    color: #000;
+    background-color: #F5EBEA;
+}
+.grid__body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid__item{
+    padding: 20px;
+}
+.account{
+    display: flex;
+    justify-content: center;
+}
+/*PAGINATION_____________*/
+.pagination__buttons{
+    display: flex;
+    justify-content: center;
+}
+.pagination__button{
+    padding: 10px;
+    margin: 20px 5px;
+}
+/*FOOTER______________*/
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #46996C;
+    height:300px;
+}
+.footer__links {
+
+}
+.footer__link{
+    color: white;
+}
+.footer__link:hover{
+    color: #000;
+}
